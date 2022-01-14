@@ -1,0 +1,119 @@
+/* ----------------------
+        Google Font
+------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+
+/* ----------------------
+        Common styles
+------------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    width: 1024px;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* ----------------------
+    Header & Navigation
+---------------------- */
+header{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+}
+nav h1{
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+/* ------------------------
+    Start Journey part
+--------------------------- */
+.start-journey{
+    display: flex;
+    align-items: center;
+}
+.Influncer-intro{
+    padding-left: 20px;
+    width: 60%;
+}
+.Influncer-intro h1{
+    font-size: 50px;
+    margin: 0px;
+}
+.Influncer-intro p{
+    padding: 16px 0px 16px 0px;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 600px;
+}
+.Influncer-intro a{
+    font-size: 16px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border-radius: 40px;
+    color: white;
+}
+.iconArrow{
+    padding-left: 8px;
+}
+.influncer-intro-image{
+    width: 40%;
+}
+.influncer-intro-image img{
+    width: 100%;
+}
+
+
+
+/* ---------------------------
+        Popular Collection
+------------------------------ */
+.popular-collection{
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.705);
+    padding: 1em;
+    border-radius: 5px;
+}
+.product img{
+    width: 100%;
+    height: 50%;
+}
+.rating{
+    color: #FB8200;
+}
