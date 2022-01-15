@@ -152,6 +152,9 @@ hr {
 .company-logos {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2em;
 }
 
 /* ---------------------------
@@ -294,10 +297,11 @@ footer {
 
 /* -------- For Tab --------- */
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1040px) {
   /* Common Styles */
   nav,
-  section {
+  section,
+  .influncer-intro-image img {
     width: 100%;
     padding: 0px;
   }
@@ -344,14 +348,14 @@ footer {
   }
 
   /* For Navigation */
-  nav{
-      justify-content: center;
+  nav {
+    justify-content: center;
   }
   nav > h1 {
     text-align: center;
   }
-  .nav-links{
-      display: none;
+  .nav-links {
+    display: none;
   }
 
   /* Start Journy */
@@ -365,12 +369,12 @@ footer {
   .feedback {
     width: 100%;
   }
-  .Influncer-intro{
-      text-align: center;
-      order: 2;
+  .Influncer-intro {
+    text-align: center;
+    order: 2;
   }
-  .Influncer-intro h1{
-      font-size: 28px;
+  .Influncer-intro h1 {
+    font-size: 28px;
   }
 
   /* Companies Logo */
