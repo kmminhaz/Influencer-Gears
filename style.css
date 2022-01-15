@@ -33,6 +33,7 @@ header,
 nav,
 .nav-links,
 .start-journey,
+.influncer-intro-image,
 .companies,
 .see-more,
 .feedbacks,
@@ -43,6 +44,7 @@ nav,
 
 /* for justify-content: center; */
 header,
+.influncer-intro-image,
 .companies,
 .products,
 .feedbacks,
@@ -129,7 +131,7 @@ nav h1 {
   width: 40%;
 }
 .influncer-intro-image img {
-  width: 90%;
+  width: 100%;
 }
 .influncer-intro-image:hover img {
   transform: scale(1.1);
@@ -305,17 +307,16 @@ footer {
   /* Common Styles */
   nav,
   section {
-    width: 95%;
+    width: 90%;
     padding: 0px;
   }
 
   /* For Start Journy & Feedbacks */
-  nav,
   .Influncer-intro,
   .companies,
   .products,
   .feedbacks {
-    padding: 1em;
+    padding: 1em 1em 1em 0;
   }
 
   /* For Start Journy */
@@ -379,7 +380,7 @@ footer {
   .influncer-intro-image,
   .influncer-intro-image img,
   .feedback {
-    width: 100%;
+    width: 95%;
   }
   .Influncer-intro {
     text-align: center;
