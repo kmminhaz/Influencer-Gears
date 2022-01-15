@@ -125,7 +125,11 @@ nav h1 {
   transition: 1s linear;
 }
 .influncer-intro-image {
+  margin: 0px;
   width: 40%;
+}
+.influncer-intro-image img {
+  width: 90%;
 }
 .influncer-intro-image:hover img {
   transform: scale(1.1);
@@ -300,9 +304,8 @@ footer {
 @media only screen and (max-width: 1040px) {
   /* Common Styles */
   nav,
-  section,
-  .influncer-intro-image img {
-    width: 100%;
+  section {
+    width: 95%;
     padding: 0px;
   }
 
@@ -319,6 +322,15 @@ footer {
   .Influncer-intro,
   .influncer-intro-image {
     width: 50%;
+  }
+  .influncer-intro-image img {
+    width: 100%;
+  }
+
+  /* Deviders */
+  hr {
+    border-right: 200px solid #d9dbe100;
+    border-left: 200px solid #d9dbe100;
   }
 
   /* Companies Logo */
@@ -377,11 +389,13 @@ footer {
     font-size: 28px;
   }
 
-  /* Companies Logo */
+  /* Deviders */
   hr {
     border-right: 100px solid #d9dbe100;
     border-left: 100px solid #d9dbe100;
   }
+
+  /* Companies Logo */
   .company-logos {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
