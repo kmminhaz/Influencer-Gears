@@ -16,6 +16,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
+nav,
 section {
   width: 1024px;
   padding: 20px;
@@ -28,28 +29,58 @@ li a {
   color: black;
 }
 
+/* for display: flex; */
+header,
+.start-journey,
+.see-more,
+.feedbacks,
+.customer,
+.icons {
+  display: flex;
+}
+
+/* for justify-content: center; */
+header,
+.products,
+.feedbacks,
+.icons {
+  justify-content: center;
+}
+
+/* For align-items: center; */
+.start-journey,
+.products,
+.product,
+.see-more,
+.customer {
+  align-items: center;
+}
+
+/* For width:100% */
+footer,
+.influncer-intro-image,
+.product img {
+  width: 100%;
+}
+
+
+
+/* --------------------
+    Other Styles
+---------------------- */
+
+
 /* ----------------------
     Header & Navigation
 ---------------------- */
-header {
-  display: flex;
-  justify-content: center;
-}
-nav {
-  width: 1024px;
-  padding-left: 20px;
-}
 nav h1 {
   font-size: 22px;
 }
 
+
 /* ------------------------
     Start Journey part
 --------------------------- */
-.start-journey {
-  display: flex;
-  align-items: center;
-}
 .Influncer-intro {
   width: 60%;
 }
@@ -84,15 +115,10 @@ nav h1 {
 .influncer-intro-image {
   width: 40%;
 }
-.influncer-intro-image img {
-  width: 100%;
-}
 .influncer-intro-image:hover img {
   transform: scale(1.1);
   transition: 2s;
 }
-
-
 
 
 /* ---------------------------
@@ -108,7 +134,6 @@ nav h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
-  justify-content: center;
   align-items: center;
 }
 .product {
@@ -122,7 +147,6 @@ nav h1 {
   transition: 1s ease-in-out;
 }
 .product img {
-  width: 100%;
   height: 50%;
 }
 .product-title {
@@ -157,7 +181,6 @@ nav h1 {
 }
 .see-more {
   color: #e02c6d;
-  display: flex;
   align-items: center;
   justify-content: right;
   margin: 50px 0 0 0;
@@ -165,13 +188,12 @@ nav h1 {
   font-weight: 700;
 }
 
+
 /* ------------------------
     Customers Feedback
 --------------------------- */
 .feedbacks {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .feedback {
   width: 30%;
@@ -181,9 +203,7 @@ nav h1 {
   border-radius: 5px;
 }
 .customer {
-  display: flex;
   align-items: center;
-  width: 100%;
 }
 .customer img {
   width: 30%;
@@ -198,12 +218,12 @@ nav h1 {
   font-weight: 600px;
 }
 
+
 /* ------------------------
         Footer
 ---------------------------*/
 footer {
   background-color: #0a0826;
-  width: 100%;
 }
 .footer-contents {
   margin: 50px 0;
@@ -221,8 +241,6 @@ footer {
   margin: 3px 0;
 }
 .icons {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -239,17 +257,14 @@ footer {
   transition: 0.2s ease-in-out;
 }
 
-
-
-
 /* ------------------------------------
         Media Query [Making Responsive]
 --------------------------------------- */
 
-
 /* -------- For Tab --------- */
 
 @media only screen and (max-width: 1050px) {
+
   /* Common Styles */
   nav,
   section {
@@ -266,8 +281,9 @@ footer {
   }
 
   /* For Start Journy */
-  .Influncer-intro, .influncer-intro-image{
-      width: 50%;
+  .Influncer-intro,
+  .influncer-intro-image {
+    width: 50%;
   }
 
   /* For Products */
@@ -279,8 +295,6 @@ footer {
     padding-right: 1em;
   }
 }
-
-
 
 /* -------- For Mobile devices -------- */
 
