@@ -1,8 +1,7 @@
 /* ----------------------
         Google Font
 ------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Manrope:wght@700&family=Poppins:wght@500;700&family=Roboto:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Manrope:wght@700&family=Poppins:wght@500;700&family=Roboto:wght@700&display=swap");
 
 
 /* ----------------------
@@ -29,8 +28,6 @@ li a {
   color: black;
 }
 
-
-
 /* ----------------------
     Header & Navigation
 ---------------------- */
@@ -40,13 +37,11 @@ header {
 }
 nav {
   width: 1024px;
-  padding: 0 20px;
+  padding-left: 20px;
 }
 nav h1 {
   font-size: 22px;
 }
-
-
 
 /* ------------------------
     Start Journey part
@@ -56,7 +51,6 @@ nav h1 {
   align-items: center;
 }
 .Influncer-intro {
-  /* padding-left: 20px; */
   width: 60%;
 }
 .Influncer-intro h1 {
@@ -76,16 +70,16 @@ nav h1 {
   border-radius: 40px;
   color: white;
 }
-.preebook-button-link:hover{
-    transform: translate(10px);
-    transition: 1s ease-in-out;
+.preebook-button-link:hover {
+  transform: translate(10px);
+  transition: 1s ease-in-out;
 }
 .iconArrow {
   padding-left: 8px;
 }
-.preebook-button-link:hover .iconArrow{
-    transform: translate(10px);
-    transition: 1s linear;
+.preebook-button-link:hover .iconArrow {
+  transform: translate(10px);
+  transition: 1s linear;
 }
 .influncer-intro-image {
   width: 40%;
@@ -93,10 +87,11 @@ nav h1 {
 .influncer-intro-image img {
   width: 100%;
 }
-.influncer-intro-image:hover img{
-    transform: scale(1.1);
-    transition: 2s;
+.influncer-intro-image:hover img {
+  transform: scale(1.1);
+  transition: 2s;
 }
+
 
 
 
@@ -122,9 +117,9 @@ nav h1 {
   padding: 1em;
   border-radius: 5px;
 }
-.product:hover{
-    transform: scale(1.1);
-    transition: 1s ease-in-out;
+.product:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
 }
 .product img {
   width: 100%;
@@ -160,103 +155,161 @@ nav h1 {
   font-family: "Roboto", sans-serif;
   margin: 6px 0;
 }
-.see-more{
-    color: #E02C6D;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    margin: 50px 0 0 0;
-    font-size: 16px;
-    font-weight: 700;
+.see-more {
+  color: #e02c6d;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 50px 0 0 0;
+  font-size: 16px;
+  font-weight: 700;
 }
-
-
 
 /* ------------------------
     Customers Feedback
 --------------------------- */
-.feedbacks{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.feedbacks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.feedback{
-    width: 30%;
-    margin: 0.5em;
-    padding: 5px;
-    box-shadow: 1px 2px 3px 1px grey;
-    border-radius: 5px;
+.feedback {
+  width: 30%;
+  margin: 0.5em;
+  padding: 5px;
+  box-shadow: 1px 2px 3px 1px grey;
+  border-radius: 5px;
 }
-.customer{
-    display: flex;
-    align-items: center;
-    width: 100%;
+.customer {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
-.customer img{
-    width: 30%;
+.customer img {
+  width: 30%;
 }
-.customer h3{
-    color: #0A0826;
-    padding-left: 20px;
-    margin: 0;
+.customer h3 {
+  color: #0a0826;
+  padding-left: 20px;
+  margin: 0;
 }
-.customer-feedback p{
-    margin-bottom: 0px;
-    font-weight: 600px;
+.customer-feedback p {
+  margin-bottom: 0px;
+  font-weight: 600px;
 }
-
-
-
 
 /* ------------------------
         Footer
 ---------------------------*/
-footer{
-    background-color: #0A0826;
-    width: 100%;
+footer {
+  background-color: #0a0826;
+  width: 100%;
 }
-.footer-contents{
-    margin: 50px 0;
-    text-align: center;
-    color: white;
+.footer-contents {
+  margin: 50px 0;
+  text-align: center;
+  color: white;
 }
-.footer-contents h2{
-    font-size: 24px;
-    font-weight: 700;
-    margin: 0px;
+.footer-contents h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0px;
 }
-.footer-contents p{
-    color: #D9DBE1;
-    font-size: 14px;
-    margin: 3px 0;
+.footer-contents p {
+  color: #d9dbe1;
+  font-size: 14px;
+  margin: 3px 0;
 }
-.icons{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
-.icon{
-    font-size: 17px;
-    margin-right: 0.5em;
-    border-radius: 20px;
-    background: none;
-    border: 7px solid rgba(128, 128, 128, 0.253);
-    color: white;
+.icon {
+  font-size: 17px;
+  margin-right: 0.5em;
+  border-radius: 20px;
+  background: none;
+  border: 7px solid rgba(128, 128, 128, 0.253);
+  color: white;
 }
-.icon:hover{
-    transform: scale(1.1);
-    transition: 0.20s ease-in-out;
+.icon:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
 }
 
 
 
-/* --------------------
-        Media Query
------------------------ */
+
+/* ------------------------------------
+        Media Query [Making Responsive]
+--------------------------------------- */
+
 
 /* -------- For Tab --------- */
-@media only screen and (max-width: 992px) {
 
-    
+@media only screen and (max-width: 1050px) {
+  /* Common Styles */
+  nav,
+  section {
+    width: 100%;
+    padding: 0px;
+  }
+
+  /* For Start Journy & Feedbacks */
+  nav,
+  .Influncer-intro,
+  .products,
+  .feedbacks {
+    padding: 1em;
+  }
+
+  /* For Start Journy */
+  .Influncer-intro, .influncer-intro-image{
+      width: 50%;
+  }
+
+  /* For Products */
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4em;
+  }
+  .see-more {
+    padding-right: 1em;
+  }
+}
+
+
+
+/* -------- For Mobile devices -------- */
+
+@media only screen and (max-width: 705px) {
+
+  /* Common Styles */
+  nav,
+  section {
+    width: 100%;
+    padding: 0px;
+  }
+
+  /* For Navigation */
+  nav > h1 {
+    text-align: center;
+  }
+
+  /* Start Journy */
+  .start-journey {
+    flex-wrap: wrap;
+  }
+  .Influncer-intro,
+  .influncer-intro-image,
+  .feedback {
+    width: 100%;
+  }
+
+  /* popular Collection */
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
