@@ -39,8 +39,6 @@ header {
   justify-content: center;
 }
 nav {
-  display: flex;
-  justify-content: space-between;
   width: 1024px;
   padding: 0 20px;
 }
@@ -94,6 +92,10 @@ nav h1 {
 }
 .influncer-intro-image img {
   width: 100%;
+}
+.influncer-intro-image:hover img{
+    transform: scale(1.1);
+    transition: 2s;
 }
 
 
@@ -244,5 +246,17 @@ footer{
 }
 .icon:hover{
     transform: scale(1.1);
-    transition: 1s ease-in-out;
+    transition: 0.20s ease-in-out;
+}
+
+
+
+/* --------------------
+        Media Query
+----------------------- */
+
+/* -------- For Tab --------- */
+@media only screen and (max-width: 992px) {
+
+    
 }
