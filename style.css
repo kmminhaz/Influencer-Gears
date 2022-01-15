@@ -3,7 +3,6 @@
 ------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Manrope:wght@700&family=Poppins:wght@500;700&family=Roboto:wght@700&display=swap");
 
-
 /* ----------------------
         Common styles
 ------------------------- */
@@ -31,7 +30,10 @@ li a {
 
 /* for display: flex; */
 header,
+nav,
+.nav-links,
 .start-journey,
+.companies,
 .see-more,
 .feedbacks,
 .customer,
@@ -41,6 +43,7 @@ header,
 
 /* for justify-content: center; */
 header,
+.companies,
 .products,
 .feedbacks,
 .icons {
@@ -48,7 +51,9 @@ header,
 }
 
 /* For align-items: center; */
+nav,
 .start-journey,
+.companies,
 .products,
 .product,
 .see-more,
@@ -63,20 +68,27 @@ footer,
   width: 100%;
 }
 
-
-
 /* --------------------
     Other Styles
 ---------------------- */
 
-
 /* ----------------------
     Header & Navigation
 ---------------------- */
-nav h1 {
-  font-size: 22px;
+nav {
+  justify-content: space-between;
 }
-
+nav h1 {
+  font-size: 25px;
+}
+.nav-links > li {
+  margin-right: 1em;
+}
+.nav-links > li > a {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
 
 /* ------------------------
     Start Journey part
@@ -120,6 +132,27 @@ nav h1 {
   transition: 2s;
 }
 
+/* ---------------------------
+        Horizontal Line
+----------------------------- */
+.top-devider {
+  margin-top: 50px;
+}
+hr {
+  border-right: 300px solid #d9dbe100;
+  border-left: 300px solid #d9dbe100;
+}
+.bottom-devider {
+  margin-bottom: 50px;
+}
+
+/* ---------------------------
+        Companies Logo
+------------------------------ */
+.company-logos {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
 
 /* ---------------------------
         Popular Collection
@@ -188,7 +221,6 @@ nav h1 {
   font-weight: 700;
 }
 
-
 /* ------------------------
     Customers Feedback
 --------------------------- */
@@ -217,7 +249,6 @@ nav h1 {
   margin-bottom: 0px;
   font-weight: 600px;
 }
-
 
 /* ------------------------
         Footer
@@ -264,7 +295,6 @@ footer {
 /* -------- For Tab --------- */
 
 @media only screen and (max-width: 1050px) {
-
   /* Common Styles */
   nav,
   section {
@@ -275,6 +305,7 @@ footer {
   /* For Start Journy & Feedbacks */
   nav,
   .Influncer-intro,
+  .companies,
   .products,
   .feedbacks {
     padding: 1em;
@@ -284,6 +315,12 @@ footer {
   .Influncer-intro,
   .influncer-intro-image {
     width: 50%;
+  }
+
+  /* Companies Logo */
+  .company-logos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
   }
 
   /* For Products */
@@ -299,7 +336,6 @@ footer {
 /* -------- For Mobile devices -------- */
 
 @media only screen and (max-width: 705px) {
-
   /* Common Styles */
   nav,
   section {
@@ -308,18 +344,43 @@ footer {
   }
 
   /* For Navigation */
+  nav{
+      justify-content: center;
+  }
   nav > h1 {
     text-align: center;
+  }
+  .nav-links{
+      display: none;
   }
 
   /* Start Journy */
   .start-journey {
     flex-wrap: wrap;
   }
+  .companies,
   .Influncer-intro,
   .influncer-intro-image,
+  .influncer-intro-image img,
   .feedback {
     width: 100%;
+  }
+  .Influncer-intro{
+      text-align: center;
+      order: 2;
+  }
+  .Influncer-intro h1{
+      font-size: 28px;
+  }
+
+  /* Companies Logo */
+  hr {
+    border-right: 100px solid #d9dbe100;
+    border-left: 100px solid #d9dbe100;
+  }
+  .company-logos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
   }
 
   /* popular Collection */
