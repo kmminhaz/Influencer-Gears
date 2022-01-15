@@ -10,6 +10,7 @@
 ------------------------- */
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0px;
 }
 main {
   display: flex;
@@ -70,15 +71,23 @@ nav h1 {
   font-size: 14px;
   font-weight: 600px;
 }
-.Influncer-intro a {
+.preebook-button-link a {
   font-size: 16px;
   padding: 10px 24px;
   background-color: #e02c6d;
   border-radius: 40px;
   color: white;
 }
+.preebook-button-link:hover{
+    transform: translate(10px);
+    transition: 1s ease-in-out;
+}
 .iconArrow {
   padding-left: 8px;
+}
+.preebook-button-link:hover .iconArrow{
+    transform: translate(10px);
+    transition: 1s linear;
 }
 .influncer-intro-image {
   width: 40%;
@@ -191,6 +200,49 @@ nav h1 {
 }
 .customer-feedback p{
     margin-bottom: 0px;
-    color:#3a3a3a;
     font-weight: 600px;
+}
+
+
+
+
+/* ------------------------
+        Footer
+---------------------------*/
+footer{
+    background-color: #0A0826;
+    width: 100%;
+}
+.footer-contents{
+    margin: 50px 0;
+    text-align: center;
+    color: white;
+}
+.footer-contents h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+}
+.footer-contents p{
+    color: #D9DBE1;
+    font-size: 14px;
+    margin: 3px 0;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.icon{
+    font-size: 17px;
+    margin-right: 0.5em;
+    border-radius: 20px;
+    background: none;
+    border: 7px solid rgba(128, 128, 128, 0.253);
+    color: white;
+}
+.icon:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
 }
