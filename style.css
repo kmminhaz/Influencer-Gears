@@ -1,7 +1,7 @@
 /* ----------------------
         Google Font
 ------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Poppins:wght@500;700&family=Roboto:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Manrope:wght@700&family=Poppins:wght@500;700&family=Roboto:wght@700&display=swap');
 
 
 
@@ -159,3 +159,38 @@ nav h1 {
     font-weight: 700;
 }
 
+
+
+/* ------------------------
+    Customers Feedback
+--------------------------- */
+.feedbacks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.feedback{
+    width: 30%;
+    margin: 0.5em;
+    padding: 5px;
+    box-shadow: 1px 2px 3px 1px grey;
+    border-radius: 5px;
+}
+.customer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.customer img{
+    width: 30%;
+}
+.customer h3{
+    color: #0A0826;
+    padding-left: 20px;
+    margin: 0;
+}
+.customer-feedback p{
+    margin-bottom: 0px;
+    color:#3a3a3a;
+    font-weight: 600px;
+}
